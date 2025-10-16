@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contract Form</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-md bg-body-tertiary mb-0 py-0">
+
+  <div class="container-fluid py-2 ">
+    <a class="navbar-brand m-0 mx-3" href="#">
+      <img src="quad.svg" alt="Logo">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav  me-auto mb-0">
+        <li class="nav-item d-flex align-items-center ">
+          <i class="fa-solid fa-house-chimney text-primary"></i>
+          <a class="nav-link text-dark" href="#">Home</a>
+        </li>
+        
+        <li class="nav-item d-flex align-items-center ">
+          <i class="fa-solid fa-link text-success"></i>
+          <a class="nav-link text-dark" href="#">Portals</a>
+        </li>
+       
+
+        <li class="nav-item dropdown navbar-nav d-flex align-items-center">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-building text-primary mx-1"></i>Partners
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-anchor fa-fw  text-primary"></i> Vendors</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-school fa-fw   text-success"></i> Customers</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-building fa-fw  text-danger"></i> Blacklist</a></li>
+          </ul>
+        </li>
+   
+        
+
+        
+
+        <li class="nav-item dropdown navbar-nav d-flex align-items-center ">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user text-primary"></i> Fulfillments
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-invoice-dollar text-primary fa-fw mx-1"></i>Awards</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-contract text-success fa-fw mx-1"></i>Contracts</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-waveform text-danger fa-fw mx-1"></i>Orders</a></li>
+            <li><hr class="dropdown-divider"></li>
+           <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list text-success mx-1"></i>Follow-up</a></li>
+          </ul>
+        </li>
+     
+
+
+
+        <li class="nav-item navbar-nav d-flex align-items-center dropdown mx-1">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <i class="fa-solid fa-gear text-success"></i>Settings
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-users text-danger fa-fw mx-1"></i>Users</a></li>
+            <li><hr class="dropdown-divider"></li>
+           <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list text-success fa-fw mx-1"></i>Check-List</a></li>
+          </ul>
+        </li>
+
+     
+       
+        <li class="nav-item d-flex align-items-center ">
+          <i class="fa-solid fa-list text-success"></i>
+          <a class="nav-link text-dark" href="#">Opportunities</a>
+        </li>
+         <li class="nav-item ">
+    <a class="nav-link text-dark d-flex align-items-center" href="#">
+      <i class="fa-solid fa-plus text-success me-1"></i>
+      New Opportunity
+    </a>
+  </li>
+      </ul>
+
+
+
+      <ul class="navbar-nav d-flex align-items-center mx-1">
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-solid fa-user text-primary"></i>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user fa-fw mx-1"></i> Sharanya Deekshitula</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user fa-fw mx-1"></i> Change Password</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user fa-fw mx-1"></i> Change Passphrase</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket mx-1 text-danger"></i> Logout</a></li>
+    </ul>
+  </li>
+</ul>
+
+   
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+         <!-- <i class="fa-solid fa-circle-question text-primary align-self-center mx-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"></i> -->
+             <i class="fa-solid fa-circle-question text-primary align-self-center mx-1" data-bs-toggle="tooltip" title="Help" data-bs-placement="right"></i>
+        <button class="btn btn-outline-success me-2"  type="submit">Search</button>
+      
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- FORM -->
+  <div class="container-xl border border-primary mx-auto py-2 mt-3 mb-4" >
+    <form>
+      <div class="row">
+        <label  class=" col-12 col-md-2 col-form-label text-md-end">Contract ID:</label>
+  
+        <div class="col-12 col-md-10">
+          <input type="text" class="form-control" placeholder=" Contract ID" value="C-2025-001" disabled>
+        </div>
+      </div>
+
+      <div class="row my-1">
+        <label  class=" col-12 col-md-2 col-form-label text-md-end">Contract Number:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Contract Number" value="CN-908765432">
+        </div>
+        <label  class="col-12 col-md-2 col-form-label text-md-end">NAICS Code:</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="NAICS Code" value="541519">
+        </div>
+      </div>
+
+      <div class="row my-1">
+        <label  class="col-12 col-md-2 col-form-label text-md-end">Name:</label>
+        <div class="col-12 col-md-10">
+          <input type="text" class="form-control" placeholder="Name" value="IT Support Services Contract">
+        </div>
+      </div>
+
+      <div class="row my-1">
+        <label  class="col-md-2 col-form-label text-md-end">Description:</label>
+        <div class="col-12 col-md-10">
+          <textarea class="form-control h-100" rows="3" placeholder="Description" id="floatingTextarea2">Providing technical support, system maintenance, and helpdesk services for U.S. Government IT systems</textarea>
+        </div>
+      </div>
+
+      <div class="row my-1">
+        <label class="col-12 col-md-2 col-form-label text-md-end">Customer Code:</label>
+        <div class="col-12 col-md-8">
+          <select class="form-select"  id="inputGroupSelect04">
+               <option value="" label=" "></option>
+
+            <option>FED-HEALTH-1001-Federal Health Services</option>
+            <option>STATE-EDU-2025-State Education Department</option>
+            <option selected>USG-IT-SYS-U.S. Government IT Systems Support</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-2">
+          <button class=" btn btn-outline-success w-100 ">View Customer</button>
+        </div>
+      </div>
+
+    <div class="row my-1"> 
+    <label class=" col-12 col-md-2 col-form-label text-md-end" for="cd">Contract Date:</label> 
+    <div class="col-12 col-md-4"> 
+      <input   id="cd"    value="2018-01-06"  class="form-control" type="date" />
+    </div> 
+    <label class="col-12  col-md-2 col-form-label text-md-end">Solicitation Number:</label>
+    <div class="col-12 col-md-4">
+    <input class="form-control" placeholder="Solicitation Number" value="998" type="text"> 
+    </div> 
+    </div>
+
+
+
+    <div class="row my-1">
+    <label class="col-12 col-md-2 col-form-label text-md-end" for="perff">Perf Period From:</label>
+    <div class="col-12 col-md-4"> 
+    <input  id="perff"    value="2018-01-20"  class="form-control" type="date" />
+    </div> 
+    <label class="col-12  col-md-2 col-form-label text-md-end" for="perf">Perf Period To:</label> 
+    <div class=" col-12 col-md-4"> 
+           <input  class="form-control"  id="perf"    value="2019-01-19"   type="date" />
+    </div> 
+    </div>
+
+
+
+    <div class="row my-1"> 
+        <label  class="col-12 col-md-2 col-form-label text-md-end">Performance Year:</label>
+         <div class="col-12 col-md-4"> 
+            <select class="form-select" id="inputGroupSelect"> 
+           <option value="" label=" "></option>
+
+                <option selected>One Year</option> 
+                <option>Two Year</option>
+                 <option>Three Year</option>
+                  <option>Four Year</option> 
+                </select>
+             </div>
+              <label class=" col-12 col-md-2 col-form-label text-md-end">Delivery Mode:</label>
+               <div class=" col-12 col-md-4"> 
+                <select class="form-select" id="inputGroupSelect00"> 
+            <option value="" label=" "></option>
+                <option value="1" selected>FedEx</option> 
+                <option>UPS</option> 
+                <option>USPS</option> 
+               </select>
+               </div> 
+            </div>
+
+
+
+            <div class="row my-1"> 
+                <label class=" col-12 col-md-2 col-form-label text-md-end">Delivery Status:</label> 
+                <div class="col-12 col-md-4"> 
+                    <select class="form-select" id="inputGroupSelect01"> 
+                      <option value="" label=" "></option>
+
+        
+                        <option selected>Delivered</option> 
+                        <option>Out For Delivery</option> 
+                        <option value="1">Pending</option> 
+                    </select> 
+                </div> 
+                <label class=" col-12 col-md-2 col-form-label text-md-end" for="Deliverydate">Delivery Date:</label> 
+                <div class="col-12 col-md-4">
+                      <input   id="Deliverydate"    value="2019-01-19"  class="form-control" type="date" />
+                     </div>
+                     </div>
+            
+            <div class="row my-1">
+                 <label class="col-12 col-md-2 col-form-label text-md-end">Payment Mode:</label>
+                  <div class="col-12 col-md-4"> 
+                    <select class="form-select" id="inputGroupSelect02"> 
+                     <option value="" label=" "></option>
+
+                        <option selected>ACH</option>
+                        <option >Cash</option>
+                        <option >Check</option> 
+                        <option >Wire Transfer</option>
+                        
+                        </select>
+                     </div> 
+                     <label class="col-12 col-md-2 col-form-label text-md-end">Payment Terms:</label> 
+                     <div class="col-12 col-md-4"> 
+                        <select class="form-control" id="inputGroupSelect03"> 
+                        <option value="" label=" "></option>
+
+                            <option value="1">Net 15</option>
+                            <option selected>Net 30</option>
+                            <option value="2">Net 45</option> 
+                            <option value="3">Net 60</option> 
+                        </select> 
+                    </div> 
+                </div>
+
+
+
+                <div class="row my-1"> 
+                    <label class="col-12  col-md-2 col-form-label text-md-end text-info">Quadyster Amount:</label>
+                     <div class="col-12 col-md-4"> 
+                        <input class="form-control" placeholder=" Quadyster Amount" value="50000.00"  type="text"> 
+                    </div>
+                    <label class="col-12  col-md-2 col-form-label text-md-end" for="paymentdueDate">Payment Due Date:</label>
+                 <div class="col-12 col-md-4"> 
+                    <input   id="paymentdueDate"    value="2019-02-18"  class="form-control" type="date" />
+                </div>
+             </div>
+
+ <div class="row my-1"> 
+  <label class="col-12 col-md-2 col-form-label text-md-end text-info">Fee Amount:</label> 
+  <div class="col-12 col-md-4"> 
+    <input class="form-control" placeholder="Fee Amount" value="5000.0" type="text"> 
+  </div> 
+
+  <label class="col-12 col-md-2 col-form-label text-md-end">Fee Terms:</label> 
+  <div class="col-12 col-md-4">
+    <select class="form-select" aria-label="Fee Terms">
+<option value="" label=" "></option>
+
+      <option value="1">Net 15</option>
+      <option value="2" selected>Net 30</option>
+      <option value="3">Net 45</option>
+      <option value="4">Net 60</option>
+    </select>
+  </div>
+</div>
+
+
+                <div class="row my-1"> 
+                <label class="col-12 col-md-2 col-form-label text-md-end text-info">Contract Amount:</label>
+                <div class=" col-12 col-md-4"> 
+                <input class="form-control" placeholder=" Contract Amount" value="55000.00" type="text" disabled> 
+                </div> 
+
+                <label class="col-12 col-md-2 col-form-label text-md-end" for="startDate">Fee Due Date:</label> 
+                <div class="col-12 col-md-4"> 
+                     <input   id="startDate"    value="2019-03-17"  class="form-control" type="date" />
+                 </div> 
+                </div>
+            
+            
+            <div class="row my-1"> 
+                <label class="col-12 col-md-2 col-form-label text-md-end">Paid Date:</label>
+                 <div class="col-12 col-md-4"> 
+                    <input class="form-control"  value="2019-02-17" type="date"> </div>
+                     <label class="col-12 col-md-2 col-form-label text-md-end" for="feeDate" >Fee Paid Date:</label> 
+                     <div class="col-12 col-md-4"> 
+                          <input   id="feeDate"    value="2019-03-16"  class="form-control" type="date" />
+                     </div>
+                     </div>         
+            
+                     
+            <div class="row my-1">
+                <label class="col-12 col-md-2 col-form-label text-md-end">Payment Status:</label> 
+                <div class="col-12 col-md-4">
+                     <select class="form-select" id="inputGroupSelect05">
+                               <option value="" label=" "></option>
+
+                        <option >Cancelled</option> 
+                        <option >Declined</option> 
+                         <option >Expired</option> 
+                        <option>Pending</option>
+                        <option>Refunded</option>
+                        <option selected>Settled</option>
+
+                        </select>
+                        </div> 
+                        <label class="col-12 col-md-2 col-form-label text-md-end">Currency:</label>
+                        <div class="col-12 col-md-4">
+                        <select class="form-select" id="inputGroupSelect06">
+                  <option value="" label=" "></option>
+
+                        <option >CAD</option>
+                        <option value="1">INR</option> 
+                        <option selected>USD</option>
+                        </select> 
+                    </div> 
+                    </div>
+            
+            
+            
+            <div class="row my-1">
+                 <label class="col-12 col-md-2 col-form-label text-md-end">Customer Category:</label>
+                  <div class="col-12 col-md-4">
+                     <select class="form-select" id="inputGroupSelect16">
+                     <option value="" label=" "></option>
+                        <option >Commercial</option> 
+                        <option selected>Federal</option>
+                        <option >State</option> 
+    
+                        </select> 
+                    </div>
+                     <label class="col-12  col-md-2 form-label text-md-end">Contract Set Aside:</label>
+                      <div class="col-12 col-md-4"> 
+                        <select class="form-select" id="inputGroupSelect07"> 
+                         <option value="" label=" "></option>
+                            <option selected>None</option> 
+                            <option value="1">Small Business</option>
+                            <option value="2">Women-owned</option>
+                         </select>
+                         </div> 
+                        </div>         
+
+     <div class="d-flex justify-content-center align-items-center flex-wrap  gap-2 gap-md-0 gap-sm-3 pt-3">
+          <button class="mx-1 btn btn-primary ">
+            <i class="fa-solid fa-floppy-disk me-1 text-warning"></i>Save
+          </button>
+          <button class=" mx-1 btn btn-danger"><i class="fa-solid fa-trash me-1 text-warning" ></i>Delete</button>
+          <button class=" mx-1 btn btn-outline-success">Notes</button>
+          <button class=" mx-1 btn btn-outline-primary">Payment</button>
+          <button class=" mx-1 btn btn-outline-success"><i class="fa-solid fa-eye me-1 text-primary"></i>Switch to View</button>
+          <button class="mx-1 btn btn-outline-success">Goto: Contract List</button>
+        </div>
+
+    </form>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
